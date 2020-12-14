@@ -25,7 +25,7 @@ const account = {
     if (typeof amount !== 'number' || amount <= 0) {
       return 'Bad amount';
     }
-    
+
     if (amount > this.balance) {
       return 'Снятие такой суммы не возможно, недостаточно средств';
     } 
@@ -42,7 +42,7 @@ const account = {
   },
 
   getTransactionDetails(id) {
-    console.log(`Transaction details (id: ${id})`);
+    console.log(`Детали транзакции (id: ${id})`);
     return this.transactions[id-1]
   },
 
